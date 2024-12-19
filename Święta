@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świąteczne Życzenia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffefba, #ffffff);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        header {
+            background-color: #c0392b;
+            color: white;
+            padding: 20px;
+            font-size: 2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .wishes {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        .photo {
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        .decorations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .decorations span {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #c0392b;
+            border-radius: 50%;
+            animation: float 5s linear infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Wesołych Świąt!</header>
+    <div class="decorations">
+        <span style="top: 10%; left: 20%; animation-delay: 0s;"></span>
+        <span style="top: 30%; left: 50%; animation-delay: 2s;"></span>
+        <span style="top: 50%; left: 80%; animation-delay: 4s;"></span>
+        <span style="top: 70%; left: 30%; animation-delay: 6s;"></span>
+    </div>
+    <div class="container">
+        <div class="wishes">
+            <p>Twoje życzenia tutaj!</p>
+        </div>
+        <div class="photo">
+            <img src="https://via.placeholder.com/600x400" alt="Twoje zdjęcie tutaj">
+        </div>
+    </div>
+    <footer>Życzę wszystkiego najlepszego! ❤️</footer>
+</body>
+</html>
